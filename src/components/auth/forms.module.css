@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.inputForm {
+    padding: 10px;
+    border-radius: 1em;
+    border: 1px solid #a1a1a1;
+}
+
+.inputForm:after {
+    border: 1px solid #a1a1a1;
+}
+
+.boxBtn {
+    display: grid;
+    place-content: center;
+}
+
+.realBtn {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #fff;
+    background: #a4a4a4;
+    border-radius: 1em;
+    cursor: pointer;
+    color: #fff;
+}

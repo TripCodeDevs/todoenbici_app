@@ -1,0 +1,128 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titleReq {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.inputBox {
+  width: 100%;
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputBox p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.input_field {
+  width: 90%;
+  margin-left: 5%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1em;
+}
+
+.input_label {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.inputFiles {
+  display: grid;
+  place-content: center;
+}
+
+.boxBtnSubmit {
+  display: grid;
+  place-content: center;
+}
+
+.btnSubmit {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.btnSubmit:hover {
+  scale: 1.03;
+}
+
+.selectedType {
+  display: grid;
+  place-content: center;
+  gap: 5px;
+}
+
+.btnOpt {
+  background: #fff;
+  border-radius: 1em;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.centerSelected {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btnOpt {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.selectedType p:hover {
+  scale: 1.03;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.select {
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  scale: 1.03;
+  background: #9999ff;
+  border-radius: 1em;
+  color: #eee9e9;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.boxBtnSubmit button {
+  padding: 10px;
+  border: 1px transparent;
+  background: #0d990d;
+  cursor: pointer;
+  color: #eeeeee;
+  border-radius: 1em;
+}
+
+.centerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .centerSelected {
+    display: grid;
+    place-content: center;
+  }
+
+}

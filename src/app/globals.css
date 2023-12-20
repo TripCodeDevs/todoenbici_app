@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap");
+
+:root {
+  --curious-blue-50: #f2f8fd;
+  --curious-blue-100: #e3effb;
+  --curious-blue-200: #c1dff6;
+  --curious-blue-300: #8ac5ef;
+  --curious-blue-400: #4ca7e4;
+  --curious-blue-500: #3498db;
+  --curious-blue-600: #176fb2;
+  --curious-blue-700: #145990;
+  --curious-blue-800: #144c78;
+  --curious-blue-900: #164064;
+  --curious-blue-950: #0f2942;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+body {
+  background: #e6e6e6;
+}

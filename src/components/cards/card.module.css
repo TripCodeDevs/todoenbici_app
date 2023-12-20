@@ -1,0 +1,153 @@
+/* Card Steps */
+
+.card {
+    font-family: 'Source Sans 3', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 30px 10px;
+    gap: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    flex-basis: 300px;
+    border: 1px solid teal;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.card:hover {
+    background: #d4d4d4;
+    scale: 1.03;
+}
+
+.imgCard {
+    display: grid;
+    place-content: center;
+}
+
+.under {
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#d1d1d1,#ededed);
+}
+
+.textContent {
+    text-align: center;
+}
+
+/* Card Orders */
+
+.boxOrderItems {
+    flex-basis: 400px;
+    flex-grow: 1;
+    background: #eeeeee;
+    padding: 10px;
+    font-family: 'Source Sans 3', sans-serif;
+    border-radius: 1em  ;
+}
+
+.headerCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.title_header {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.actionBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.boxActions {
+    margin-top: 3rem;
+}
+
+.subBoxActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.actionBtnDelete {
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+.actionBtnDelete:hover {
+    background: #ff5555;
+    color: #fff;
+}
+
+.actionBtnEdit {
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.actionBtnEdit:hover {
+    background: #fff;
+}
+
+.actionBtnProcess {
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.actionBtnProcess:hover {
+    background: #2db72d;
+    color: #fff;
+}
+
+.centerBtn {
+    display: flex;
+    flex-direction: row;
+}
+
+.boxIcon {
+    display: grid;
+    place-content: center;
+}
+
+.centerBtn p {
+    margin: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.boxStatus {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.textStatus {
+    color: #6e6eb3;
+    font-weight: 300;
+}
+
+.boxStatusText {
+    display: grid;
+    place-content: center;
+}
+
+.statusIconWait {
+    color: red;
+}
+
+.statusIconOk {
+    color: green;
+}

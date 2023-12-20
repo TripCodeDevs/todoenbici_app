@@ -1,0 +1,188 @@
+.main {
+  min-height: 70vh;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding-top: 2em;
+  color: #fff;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  position: relative;
+  bottom: 0;
+  padding-top: 6em;
+}
+
+.partText {
+  flex-basis: 400px;
+  flex-grow: 1;
+  padding: 20px;
+  display: grid;
+  place-content: center;
+}
+
+.subPartText {
+  display: flex;
+  flex-direction: column;
+  color: #404040;
+}
+
+.subSlogan {
+  font-family: "Bungee", sans-serif;
+  font-size: 1vw;
+  color: #03164e;
+}
+
+.slogan {
+  font-family: "Source Sans 3", sans-serif;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.partImg {
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
+.imgWhiteScreen {
+  width: 70vw;
+  height: auto;
+  border-radius: 1em 0em 0em 1em;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 900px) {
+  .imgWhiteScreen {
+    width: 100vw;
+  }
+
+  .subSlogan {
+    font-size: 3vw;
+  }
+}
+
+.boxBtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.btnVisit {
+  padding: 10px 20px 10px 20px;
+  background: teal;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  border-radius: 1em;
+  gap: 2px;
+  font-family: "Source Sans 3", sans-serif;
+  box-shadow: 0px 10px 15px -3px #d1d1d1;
+}
+
+.boxIcon {
+  display: grid;
+  place-content: center;
+}
+
+.btnVisit:hover {
+  gap: 5px;
+}
+
+.mainInfo {
+  /* width: 90%;
+    margin-left: 5%; */
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carrousel {
+  display: grid;
+  place-content: center;
+  gap: 10px;
+}
+
+.boxcards {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.subCarrousel {
+  width: 90%;
+  margin-left: 5%;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 18rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.secondTitle {
+  text-align: center;
+  font-size: 5vw;
+  font-family: "Bungee", sans-serif;
+  color: var(--curious-blue-900);
+}
+
+.icon {
+  color: var(--curious-blue-900);
+}
+
+.infinitiCarrousel {
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  overflow: hidden;
+}
+
+.infinitiCarrousel .subInfinity {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(700px * 9);
+}
+
+.infinitiCarrousel .iconSlide {
+  width: 200px;
+}
+
+.infinitiCarrousel .iconSlide .ic0ns {
+  width: 100%;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+@keyframes scroll {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-200px * 2));
+    transform: translateX(calc(-200px * 1));
+  }
+  100% {
+    -webkit-transform: translateX(calc(200px * 2));
+    transform: translateX(calc(200px * 1));
+  }
+}
