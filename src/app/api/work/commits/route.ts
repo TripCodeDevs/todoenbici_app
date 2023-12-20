@@ -6,6 +6,17 @@ interface requestGit {
   repo: string;
 }
 
+interface responseCommit {
+  sha: string;
+  commit: {
+    author: {
+      name: string;
+    };
+    message: string;
+  };
+  message: string;
+}
+
 export async function POST(req: Request) {
   try {
     const { org, repo }: requestGit = await req.json();
@@ -22,7 +33,13 @@ export async function POST(req: Request) {
       },
     });
 
-    return NextResponse.json(response);
+    const detailCommit = response.data.map((commit: responseCommit) => ({
+      sha: commit.sha,
+      author: commit.commit.author,
+      message: commit.commit.message,
+    }));
+
+    return NextResponse.json(detailCommit);
   } catch (error) {
     console.error(error);
     return NextResponse.json({
